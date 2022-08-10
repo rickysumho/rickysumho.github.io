@@ -5,7 +5,7 @@ const Jump = ({name, emoji}: {name: string, emoji: string}) => {
     return (
         <Container>
             <Typography id={name} variant='h2' 
-            color='primary.contrastText' 
+            color='primary.light' 
             fontStyle='italic' fontWeight='bold' gutterBottom>
                 {emoji} {name}
             </Typography>

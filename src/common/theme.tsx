@@ -3,13 +3,13 @@ import PoppinsLightTtf from '../fonts/Poppins-Light.ttf';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#4D4C7D',
-            light: '#816797',
-            dark: '#363062',
-            contrastText: '#f6eff1'
+            main: '#344966',
+            light: '#B4CDED',
+            dark: '#092136',
+            contrastText: '#F0F4EF'
         },
         background: {
-            default: '#363062'
+            default: '#092136'
         }
     },
     typography: {
