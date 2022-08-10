@@ -3,13 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Projects from './components/Projects';
 import Welcome from './components/Welcome';
+import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import { ThemeProvider } from '@mui/material/styles';
 import { Box, Container, CssBaseline } from '@mui/material';
 // Temp
-import { ProjectType } from './common/types'
-import theme from './common/theme'
-import personalProjects from './common/personal-projects'
+import { ProjectType } from './common/types';
+import theme from './common/theme';
+import personalProjects from './common/personal-projects';
 
 // declare module '@mui/material/styles' {
 //   interface Theme {
@@ -30,7 +31,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Welcome />
+      <AboutMe />
       <Projects projects={personalProjects}/>
+      <Footer />
     </ThemeProvider>
   );
 }

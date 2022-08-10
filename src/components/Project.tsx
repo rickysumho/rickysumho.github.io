@@ -1,9 +1,9 @@
 import { Card, CardContent, CardActions, Typography, IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PreviewIcon from '@mui/icons-material/Preview';
-import { useState } from 'react'
+import { useState } from 'react';
 import { ProjectType } from '../common/types';
-import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/400.css';
 
 const Project = ({ project }: { project: ProjectType }) => {
     const normalState = {

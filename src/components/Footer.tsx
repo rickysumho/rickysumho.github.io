@@ -1,12 +1,18 @@
-import styled from 'styled-components';
-
-const InnerFooter = styled.div`
-`;
+import { Container, Typography, Box } from '@mui/material';
 
 const Footer = () => {
     return (
-        <>
-        </>
+        <Box display='flex' justifyContent='center' alignItems='center' mt='50em' mb='5em'>
+            <footer>
+                <Typography color='primary.contrastText' fontSize='1em' align='center'>
+                    Developed by Ricky Ho.
+                </Typography>
+                <Typography color='primary.contrastText' fontSize='0.9em' align='center'>
+                    All rights reserved. &copy; {(new Date().getFullYear())}
+                </Typography>
+            </footer>
+        </Box>
+        
     );
 }
 
