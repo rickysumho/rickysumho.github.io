@@ -3,30 +3,33 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import PreviewIcon from '@mui/icons-material/Preview';
 import { useState } from 'react'
 import { ProjectType } from '../common/types';
+import '@fontsource/poppins/400.css'
 
 const Project = ({ project }: { project: ProjectType }) => {
     const normalState = {
         hovering: false,
         boxShadow: 0,
         minWidth: 275, 
-        maxWidth: 345, 
+        maxWidth: 500, 
         minHeight: 300,
         maxHeight: 350,
         backgroundColor: 'primary.main', 
         color: 'primary.contrastText', 
-        borderRadius: '15px'
+        borderRadius: '15px',
+        transition: '0.3s'
     }
     
     const hoverState = {
         hovering: true,
         boxShadow: 15,
         minWidth: 275, 
-        maxWidth: 345, 
+        maxWidth: 500, 
         minHeight: 300,
         maxHeight: 350,
         backgroundColor: 'primary.light', 
         color: 'primary.contrastText', 
-        borderRadius: '15px'
+        borderRadius: '15px',
+        transition: '0.3s'
     }
     
     const [hover, setHover] = useState(normalState);
