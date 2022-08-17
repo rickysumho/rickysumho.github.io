@@ -6,7 +6,7 @@ import { Grid, Container } from '@mui/material';
 const Projects = ({ projects }: { projects: Array<ProjectType> }) => {
     return (
         <>
-            <Jump name='Projects' emoji='🔨' />
+            <Jump name='projects' emoji='🔨' />
             <Container>
                 <Grid container direction='row' alignItems='center' justifyContent='center' spacing={2} columnSpacing={{ xs: 1, sm: 2, md: 1 }}>
                     {projects.map((project: ProjectType, index: number) => (

@@ -1,5 +1,5 @@
 import Jump from './Jump';
-import RickyMCard from '../common/RickyMCard.jpg'
+import RickyNYC from '../common/RickyNYC.jpg'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Avatar, Box, Container, Typography, Icon, Grid } from '@mui/material';
 
@@ -38,34 +38,33 @@ const AboutMe = () => {
         alignItems: 'flex-start',
         flexDirection: 'row',
         mb: '5em',
-        mr: '2em'
     }
 
     return (
         <>
-            <Jump name='About Me' emoji='🐈'/>
+            <Jump name='about me' emoji='🐈'/>
             <Container>
                 <Box sx={boxStyle}>
-                    <Box sx={{...boxStyle, flexDirection: 'column', mr: '5em'}}>
-                        <Typography color='primary.contrastText' minWidth='20em' maxWidth='30em' fontSize='1.2em' gutterBottom>
+                    <Box sx={{...boxStyle, flexDirection: 'column', backgroundColor: 'primary.main', padding: '1.5em', borderRadius: '15px', maxWidth: '50em' }}>
+                        <Typography color='primary.contrastText' fontSize='1.2em' gutterBottom>
                             {info.intro}
                         </Typography>
-                        <Typography color='primary.contrastText' minWidth='20em' maxWidth='30em' fontSize='1.2em' gutterBottom>
+                        <Typography color='primary.contrastText' fontSize='1.2em' gutterBottom>
                             &nbsp;
                         </Typography>
-                        <Typography color='primary.contrastText' minWidth='20em' maxWidth='30em' fontSize='1.2em' gutterBottom>
-                            Some of my curent skills include:
+                        <Typography color='primary.contrastText' fontSize='1.2em' gutterBottom>
+                            Some of my current skills include:
                         </Typography>
-                        <Grid container spacing={2} mt='0.5em' mb='2em'>
+                        <Grid container spacing={0} mt='0.5em' mb='2em'>
                             {info.skills.map((skill) => (
                                 <Skill skill={skill} />
                             ))}
                         </Grid>
-                        <Typography color='primary.contrastText' minWidth='20em' maxWidth='30em' fontSize='1.2em' gutterBottom>
+                        <Typography color='primary.contrastText' fontSize='1.2em' gutterBottom>
                             {info.interests}
                         </Typography>
                     </Box>
-                    <Avatar alt='Ricky Ho' src={RickyMCard} variant='rounded' sx={avatarStyle} />
+                    <Avatar alt='Ricky Ho' src={RickyNYC} variant='rounded' sx={avatarStyle} />
                 </Box>
             </Container>
         </>

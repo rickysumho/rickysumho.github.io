@@ -9,8 +9,8 @@ const Welcome = () => {
 
     return (
         <Container>
-            <Box alignItems='center' justifyContent="center" sx={{margin: '5em'}}>
-                <Typography variant='h1' color='primary.contrastText'><b>hi! i'm ricky 😸</b></Typography>
+            <Box alignItems='center' justifyContent='center' sx={{margin: '5em'}}>
+                <Typography variant='h1' color='primary.light'><b>hi! i'm ricky 😸</b></Typography>
                 <Typography variant='h3' color='primary.contrastText' fontStyle='italic' gutterBottom>aspiring keyboard presser</Typography>
                 <Typography paragraph color='primary.contrastText'>I'm a student at the University of Michigan studying Computer Science. I like making stuff.</Typography>
             </Box>
