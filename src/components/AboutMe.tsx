@@ -11,7 +11,6 @@ const Skill = ({skill}: {skill: string}) => {
                 <Icon><KeyboardArrowRightIcon sx={{ color: 'primary.contrastText' }} /></Icon>
                 <Typography color='primary.contrastText' fontSize='1.2em' fontWeight='bold'>{skill}</Typography>
             </Box>
-            
         </Grid>
     );
 }
@@ -32,20 +31,31 @@ const AboutMe = () => {
         boxShadow: 15
     };
 
-    const boxStyle = {
+    const outerBoxStyle = {
+        display: 'flex',
+        justifyContent: 'space-between', 
+        alignItems: 'center',
+        flexDirection: 'row',
+        mb: '35em',
+    }
+
+    const innerBoxStyle = {
         display: 'flex',
         justifyContent: 'space-between', 
         alignItems: 'flex-start',
-        flexDirection: 'row',
-        mb: '5em',
+        flexDirection: 'column', 
+        backgroundColor: 'primary.main', 
+        padding: '1.5em', 
+        borderRadius: '15px', 
+        maxWidth: '50em'
     }
 
     return (
         <>
             <Jump name='about me' emoji='🐈'/>
             <Container>
-                <Box sx={boxStyle}>
-                    <Box sx={{...boxStyle, flexDirection: 'column', backgroundColor: 'primary.main', padding: '1.5em', borderRadius: '15px', maxWidth: '50em' }}>
+                <Box sx={outerBoxStyle}>
+                    <Box sx={innerBoxStyle}>
                         <Typography color='primary.contrastText' fontSize='1.2em' gutterBottom>
                             {info.intro}
                         </Typography>

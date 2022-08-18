@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import PoppinsLightTtf from '../fonts/Poppins-Light.ttf';
+
 const theme = createTheme({
     palette: {
         primary: {
@@ -7,6 +7,9 @@ const theme = createTheme({
             light: '#B4CDED',
             dark: '#092136',
             contrastText: '#F0F4EF'
+        },
+        secondary: {
+            main: '#839dc0'
         },
         background: {
             default: '#092136'

@@ -3,38 +3,22 @@ import { ProjectType } from './types';
 const projects: Array<ProjectType> = [
   {
     title: 'Petlify',
-    description: 'Doggy and cat project!',
-    skills: 'JavaScript and waffleboarding',
-    repo_link: 'https://dababy.com/',
-    demo_link: 'https://babydada.com/'
+    description: 'A Tinder-styled pet adoption web application created for Google CSSI',
+    skills: 'JavaScript, Firebase, Git',
+    repo_link: 'https://github.com/rickysumho/petlify',
+    demo_link: 'https://petlify-b4a28.web.app/'
   },
   {
-    title: 'Dababy',
-    description: 'There are too many things about dababy that I care about.',
-    skills: 'BabyJS ',
-    repo_link: 'https://dababy.com/',
-    demo_link: 'https://babydada.com/'
+    title: 'Portfolio Site',
+    description: 'A single-page React portfolio application built with Material UI',
+    skills: 'TypeScript, React.js, Material UI, Git',
+    repo_link: 'https://github.com/rickysumho/rickysumho.github.io',
+    demo_link: 'https://rickysumho.github.io/'
   },
   {
-    title: 'Petlify',
-    description: 'Doggy and cat project!',
-    skills: 'JavaScript and waffleboarding',
-    repo_link: 'https://dababy.com/',
-    demo_link: 'https://babydada.com/'
-  },
-  {
-    title: 'Petlify',
-    description: 'Doggy and cat project!',
-    skills: 'JavaScript and waffleboarding',
-    repo_link: 'https://dababy.com/',
-    demo_link: 'https://babydada.com/'
-  },
-  {
-    title: 'Petlify',
-    description: 'Doggy and cat project!',
-    skills: 'JavaScript and waffleboarding',
-    repo_link: 'https://dababy.com/',
-    demo_link: 'https://babydada.com/'
+    title: 'Hungry Dasher',
+    description: 'A Discord bot that automates promotional account creation for various websites',
+    skills: 'TypeScript, Node.js, Discord.js, Jira, Git',
   },
 ];
 

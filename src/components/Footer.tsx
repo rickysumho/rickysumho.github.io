@@ -2,7 +2,7 @@ import { Container, Typography, Box } from '@mui/material';
 
 const Footer = () => {
     return (
-        <Box display='flex' justifyContent='center' alignItems='center' mt='50em' mb='5em'>
+        <Box display='flex' justifyContent='center' alignItems='center' mb='2em'>
             <footer>
                 <Typography color='primary.contrastText' fontSize='1em' align='center'>
                     Developed by Ricky Ho.
@@ -12,7 +12,6 @@ const Footer = () => {
                 </Typography>
             </footer>
         </Box>
-        
     );
 }
 

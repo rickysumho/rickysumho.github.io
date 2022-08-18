@@ -8,7 +8,7 @@ const Projects = ({ projects }: { projects: Array<ProjectType> }) => {
         <>
             <Jump name='projects' emoji='🔨' />
             <Container>
-                <Grid container direction='row' alignItems='center' justifyContent='center' spacing={2} columnSpacing={{ xs: 1, sm: 2, md: 1 }}>
+                <Grid container direction='row' alignItems='center' justifyContent='center' spacing={2} mb='15em' columnSpacing={{ xs: 1, sm: 2, md: 1 }}>
                     {projects.map((project: ProjectType, index: number) => (
                         <Grid item key={index} xs={12} sm={6} md={4}>
                             <Project key={index} project={project} />
