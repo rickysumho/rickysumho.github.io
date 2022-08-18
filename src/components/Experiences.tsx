@@ -23,6 +23,7 @@ const Experiences = ({ experiences }: { experiences: Array<ExperienceType> }) =>
     const [selected, setSelected] = useState(0);
 
     const changeSelect = (event: SyntheticEvent, selectedIdx: number) => {
+        console.log(selectedIdx);
         setSelected(selectedIdx);
     };
     
@@ -31,15 +32,15 @@ const Experiences = ({ experiences }: { experiences: Array<ExperienceType> }) =>
             <Jump name='experiences' emoji='👾' />
             <Container>
                 <Box display='flex' justifyContent='flex-start' alignItems='center'>
-                    <Box sx={boxStyle}>
+                    <Box key='tabs' sx={boxStyle}>
                         <Tabs orientation='vertical' textColor='primary' value={selected} onChange={changeSelect} sx={{ width: '25em' }} >
-                            {experiences.map((experience: ExperienceType) => (
-                                <ExperienceListTab experience={experience} id={experience.id} selected={selected} />
+                            {experiences.map((experience: ExperienceType, index: number) => (
+                                <ExperienceListTab key={`tab-${index}`} experience={experience} id={experience.id} selected={selected} />
                             ))}
                         </Tabs>
                     </Box>
-                    <Box sx={{ backgroundColor: 'primary.main', borderRadius: '15px' }}>
-                        <ExperienceListPanel experiences={experiences} id={selected} />
+                    <Box key='panel' sx={{ backgroundColor: 'primary.main', borderRadius: '15px' }}>
+                        <ExperienceListPanel experiences={experiences} selected={selected} />
                     </Box>
                 </Box>
             </Container>

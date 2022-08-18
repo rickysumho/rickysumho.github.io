@@ -56,8 +56,8 @@ const AboutMe = () => {
                             Some of my current skills include:
                         </Typography>
                         <Grid container spacing={0} mt='0.5em' mb='2em'>
-                            {info.skills.map((skill) => (
-                                <Skill skill={skill} />
+                            {info.skills.map((skill: string, index: number) => (
+                                <Skill key={`skill-${index}`} skill={skill} />
                             ))}
                         </Grid>
                         <Typography color='primary.contrastText' fontSize='1.2em' gutterBottom>

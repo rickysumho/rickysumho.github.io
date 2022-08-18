@@ -3,10 +3,10 @@ import { Tab, Typography } from '@mui/material';
 
 
 const ExperienceListTab = ({ experience, id, selected }: { experience: ExperienceType, id: number, selected: any }) => {
-    // Add state handling for showing selection
+    // if selected then change backgroundColor to selected color
 
     return (
-        <Tab label={experience.company} value={id} 
+        <Tab label={experience.company} value={id}
         sx={{ color: 'primary.contrastText', fontWeight: 'bold', fontSize: '1.25em' }} 
         />
     );
