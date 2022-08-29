@@ -17,7 +17,7 @@ const Skill = ({skill}: {skill: string}) => {
 
 const AboutMe = () => {
     const info = {
-        intro: 'I am a second-year student at the University of Michigan studying Computer Science. Most of my technical experience has been in the web development, but I have dabbled in mobile development and robotics.',
+        intro: 'I am an undergraduate student at the University of Michigan studying Computer Science. Most of my technical experience has been in the web development, but I have dabbled in mobile development and robotics.',
         skills: ['JavaScript 🖥️', 'Node.js 🟩', 'C++ 🤖', 'Python 🐍', 'TypeScript ⌨️', 'React.js 🧪', 'Java ☕', 'HTML & CSS 📚'],
         interests: 'In my free time, I love playing volleyball, reselling sneakers, and crypto investing.'
     }
